@@ -33,6 +33,12 @@ body{
     '. page-nav page-main .'
     'page-footer page-footer page-footer page-footer';
 }
+.inner-block{
+    height: 80px;
+    border: 1px solid green;
+   
+}
+
 
 .header{
     grid-area: page-header;
@@ -41,7 +47,12 @@ body{
     grid-area: page-nav;
 }
 .main{
+    padding: 20px;
     grid-area: page-main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px,1fr));
+    gap: 20px;
+    align-content: start;
 }
 .footer{
     grid-area: page-footer;
