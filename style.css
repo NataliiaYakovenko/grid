@@ -46,3 +46,15 @@ body{
 .footer{
     grid-area: page-footer;
 }
+@media screen and (max-width:650px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px auto 1fr 100px ;
+        grid-template-areas: 
+        'page-header'
+        'page-nav'
+        'page-main'
+        'page-footer';
+    }
+    
+}
